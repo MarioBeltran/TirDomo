@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TDomo</string>
+    <string name="app_email">tmaxserver@gmail.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="remote_control">Controles</string>
+    <string name="add_devices">Agregar Dispositivos</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="nav_backup">Exportar Datos</string>
+    <string name="nav_help">Ayuda</string>
+
+    <string name="button_remoteControl">Controles IR</string>
+    <string name="button_lights">Luces</string>
+    <string name="button_curtains">Cortinas</string>
+
+
+
+</resources>

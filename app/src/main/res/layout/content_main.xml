@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mario.tirdomo.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_irControls"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@drawable/ic_control_remote_black_24dp"
+                android:text="@string/button_remoteControl"
+                android:textSize="16dp"
+                android:onClick="button_select_control"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <Button
+                android:id="@+id/button_lights"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@drawable/ic_lightbulb_outline_black_24dp"
+                android:text="@string/button_lights"
+                android:textSize="16dp"
+                android:onClick="button_select_control"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteY="76dp" />
+
+            <Button
+                android:id="@+id/button_curtains"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@drawable/ic_curtains_black_24dp"
+                android:text="@string/button_curtains"
+                android:textSize="16dp"
+                android:onClick="button_select_control"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteY="148dp" />
+
+            <Button
+                android:id="@+id/button_switch"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@drawable/ic_radio_button_checked_black_24dp"
+                android:text="@string/button_switch"
+                android:textSize="16dp"
+                android:onClick="button_select_control"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteY="206dp" />
+
+            <Button
+                android:id="@+id/button_security"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@drawable/ic_notifications_active_black_24dp"
+                android:text="@string/button_secutiry"
+                android:textSize="16dp"
+                android:onClick="button_select_control"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteY="278dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

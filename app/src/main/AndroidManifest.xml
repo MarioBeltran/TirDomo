@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mario.tirdomo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.mario.tirdomo.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mario.tirdomo.AddDevice1Activity"
+            android:parentActivityName="com.example.mario.tirdomo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.AddDevice2Activity"
+            android:parentActivityName="com.example.mario.tirdomo.AddDevice1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.splashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mario.tirdomo.AddDevice3Activity"
+            android:parentActivityName="com.example.mario.tirdomo.AddDevice2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.InfoDevicesActivity"
+            android:parentActivityName="com.example.mario.tirdomo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.UpdateDeviceActivity"
+            android:parentActivityName="com.example.mario.tirdomo.InfoDevicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.IrControlsActivity"
+            android:label="@string/title_activity_ir_controls"
+            android:parentActivityName="com.example.mario.tirdomo.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mario.tirdomo.AddControlirActivity"
+            android:parentActivityName="com.example.mario.tirdomo.IrControlsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.SelectDeviceActivity"
+            android:parentActivityName="com.example.mario.tirdomo.AddControlirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.SelectModelActivity"
+            android:parentActivityName="com.example.mario.tirdomo.SelectDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.EditControlNameActivity"
+            android:parentActivityName="com.example.mario.tirdomo.SelectModelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.TemplateControlir1Activity"
+            android:parentActivityName="com.example.mario.tirdomo.IrControlsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.TemplateControlir2Activity"
+            android:label="@string/title_activity_template_controlir2"
+            android:parentActivityName="com.example.mario.tirdomo.IrControlsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mario.tirdomo.EditButton1Activity"
+            android:parentActivityName="com.example.mario.tirdomo.TemplateControlir2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.NumericButtonsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.example.mario.tirdomo.ExtraButtonsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.example.mario.tirdomo.SettingsActivity"
+            android:parentActivityName="com.example.mario.tirdomo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.Favorites1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name="com.example.mario.tirdomo.EditButtonFavorite1Activity"
+            android:parentActivityName="com.example.mario.tirdomo.TemplateControlir2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.EditControlTemplateActivity"
+            android:parentActivityName="com.example.mario.tirdomo.TemplateControlir2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.mario.tirdomo.ImporExportDataActivity"
+            android:parentActivityName="com.example.mario.tirdomo.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.mario.tirdomo.EditButton2Activity"
+            android:parentActivityName="com.example.mario.tirdomo.TemplateControlir2Activity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mario.tirdomo.AddControlirActivity">
+
+    <Button
+        android:id="@+id/add_controlTv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_tv_black_24dp"
+        android:text="@string/icon_controlTv"
+        android:onClick="onclick_icon"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/add_controlDecoder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_satdeco_black_24dp"
+        android:text="@string/icon_controlDecoder"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/add_controlDvd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_dvd_black_24dp"
+        android:text="@string/icon_controlDvd"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/add_controlAc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_controlTv"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_ac_black_24dp"
+        android:text="@string/icon_controlAc"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/add_controlBox"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/add_controlDecoder"
+        android:layout_alignTop="@+id/add_controlAc"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_box_black_24dp"
+        android:text="@string/icon_controlBox"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/add_controlProjector"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/add_controlBox"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_projector_black_24dp"
+        android:text="@string/icon_controlProjector"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/add_controlReceptorAV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_controlAc"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_speaker_black_24dp"
+        android:text="@string/icon_controlAvreceiver"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <Button
+        android:id="@+id/add_controlFan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/add_controlBox"
+        android:layout_alignTop="@+id/add_controlReceptorAV"
+        android:backgroundTint="@android:color/background_light"
+        android:drawableTop="@drawable/ic_toys_black_24dp"
+        android:text="@string/icon_controlFan"
+        android:onClick="onclick_icon"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+
+
+
+
+</RelativeLayout>

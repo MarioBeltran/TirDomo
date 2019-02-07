@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_controls"
+            android:icon="@drawable/ic_control_remote_black_24dp"
+            android:title="@string/remote_control"/>
+        <item
+            android:id="@+id/nav_addDevices"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/add_devices" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_archive_black_24dp"
+            android:title="@string/nav_backup" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="@string/nav_help" />
+
+
+    </group>
+
+
+</menu>
